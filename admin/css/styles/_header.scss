@@ -1,0 +1,105 @@
+.custom-admin-header-wrap {
+    display: flex;
+    background-image: url(../img/header-bg.gif);
+    gap: 1rem;
+    align-items: center;
+    padding: 0 5%;
+
+    .header-item-logo {
+        margin: 0;
+
+        a {
+            display: block;
+            color: #333;
+            font-size: 16px;
+
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+
+    .header-item-menu {
+        flex: auto;
+        display: flex;
+        position: relative;
+
+        .item {
+            .item-link {
+                display: block;
+                padding: 0.8rem 1rem;
+                color: #666;
+            }
+
+            &:hover {
+                .item-link {
+                    color: #333;
+                    background-color: #ebebeb;
+                    font-weight: bold;
+                }
+
+                .item-submenu {
+                    display: block;
+                }
+            }
+
+            &.active {
+                .item-link {
+                    color: #333;
+                    font-weight: bold;
+                }
+            }
+
+            .item-submenu {
+                display: none;
+                position: absolute;
+                background-color: #ebebeb;
+                min-width: 150px;
+
+                .subitem {
+                    .subitem-link {
+                        display: block;
+                        padding: 10px 16px;
+                        position: relative;
+                        color: #666;
+
+                        &::before {
+                            content: "";
+                            display: block;
+                            width: 0;
+                            height: calc(100% - 8px);
+                            position: absolute;
+                            background-color: #154d82;
+                            top: 4px;
+                            left: 4px;
+                            transition: width .1s ease-in-out;
+                        }
+                    }
+
+                    &:hover {
+                        .subitem-link {
+                            color: #154d82;
+
+                            &::before {
+                                width: 4px;
+                            }
+                        }
+                    }
+
+                    &.active {
+                        .subitem-link {
+                            color: #154d82;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header-item-user {
+        .username {
+            font-weight: bold;
+        }
+    }
+}
