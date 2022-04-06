@@ -6,9 +6,9 @@ use Custom\Plugin as CustomPlugin;
 use Custom\Widget\Option;
 
 /**
- * 文件帮助类
+ * 系统文件帮助类
  */
-class File
+class SystemFile
 {
     /**
      * 单例实例

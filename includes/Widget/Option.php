@@ -28,7 +28,7 @@ class Option extends Base
         // 压入配置
         $options = $this->db->select('options', '*');
         foreach ($options as $option) {
-            $this->{Common::camelize($option['name'])} = $option['value'];
+            $this->{$option['name']} = $option['value'];
         }
 
         // 路由表反序列化

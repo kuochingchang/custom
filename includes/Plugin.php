@@ -100,7 +100,9 @@ class Plugin
         }
     }
 
-    // 设置属性回调
+    /**
+     * 设置属性回调
+     */
     public function __set($name, $value)
     {
         $name = $this->handle . ':' . $name;

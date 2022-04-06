@@ -2,7 +2,7 @@
 
 namespace Custom\Widget\Theme;
 
-use Custom\Helper\File;
+use Custom\Helper\SystemFile;
 use Custom\Widget;
 
 /**
@@ -17,6 +17,6 @@ class Rows extends Widget
 
     public function execute()
     {
-        $this->themes = File::getInstance()->getThemes();
+        $this->themes = SystemFile::getInstance()->getThemes();
     }
 }

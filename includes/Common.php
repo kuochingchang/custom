@@ -59,29 +59,5 @@ namespace Custom {
             include CUSTOM_ROOT_PATH . 'includes/Views/exception.php';
             exit;
         }
-
-        /**
-         * 去驼峰化
-         *
-         * @param string $string 待转换的字符串
-         * @param string $separator 分隔符
-         */
-        public static function uncamelize($string, $separator = '_')
-        {
-            return strtolower(ltrim(preg_replace('/[A-Z]/', $separator . '\\0', $string), $separator));
-        }
-
-        /**
-         * 驼峰化
-         *
-         * @param string $string 待转换的字符串
-         * @param string $separator 分隔符
-         * @param boolean $big_camel 是否转换为大驼峰，默认为 false
-         */
-        public static function camelize($string, $separator = '_', $bigCamel = false)
-        {
-            $string = ($bigCamel ? '' : $separator) . str_replace($separator, ' ', strtolower($string));
-            return ltrim(str_replace(" ", "", ucwords($string)), $separator);
-        }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Custom\Widget\Plugin;
 
-use Custom\Helper\File;
+use Custom\Helper\SystemFile;
 use Custom\Widget;
 
 /**
@@ -17,7 +17,7 @@ class Rows extends Widget
 
     public function execute()
     {
-        $this->plugins = File::getInstance()->getPlugins();
+        $this->plugins = SystemFile::getInstance()->getPlugins();
 
         if ($this->request->status === 'activated') {
             $this->plugins = array_filter($this->plugins, function ($plugin) {
