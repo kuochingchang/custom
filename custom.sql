@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： localhost
--- 生成日期： 2022-04-03 19:24:41
+-- 生成日期： 2022-04-06 01:04:39
 -- 服务器版本： 8.0.28
 -- PHP 版本： 8.1.4
 
@@ -31,8 +31,8 @@ CREATE TABLE `options` (
 --
 
 INSERT INTO `options` (`name`, `value`) VALUES
-('plugins', 'a:0:{}'),
-('routing_table', 'a:2:{i:0;a:3:{s:4:\"regx\";s:9:\"/^[\\/]?$/\";s:6:\"widget\";s:20:\"\\Custom\\Widget\\Index\";s:6:\"action\";s:6:\"render\";}i:1;a:3:{s:4:\"regx\";s:35:\"/^\\/action\\/([_0-9a-zA-Z-]+)[\\/]?$/\";s:6:\"widget\";s:21:\"\\Custom\\Widget\\Action\";s:6:\"params\";a:1:{i:0;s:6:\"action\";}}}'),
+('plugins', 'a:1:{s:10:\"HelloWorld\";a:3:{s:10:\"class_name\";s:33:\"Content\\Plugins\\HelloWorld\\Plugin\";s:6:\"config\";a:1:{s:5:\"value\";s:12:\"Hello World!\";}s:7:\"handles\";a:2:{s:22:\"admin/header.php:brief\";a:1:{i:0;s:41:\"Content\\Plugins\\HelloWorld\\Plugin::render\";}s:14:\"index.php:main\";a:1:{i:0;s:39:\"Content\\Plugins\\HelloWorld\\Plugin::main\";}}}}'),
+('routingTable', 'a:2:{i:0;a:3:{s:4:\"regx\";s:9:\"/^[\\/]?$/\";s:6:\"widget\";s:20:\"\\Custom\\Widget\\Index\";s:6:\"action\";s:6:\"render\";}i:1;a:3:{s:4:\"regx\";s:35:\"/^\\/action\\/([_0-9a-zA-Z-]+)[\\/]?$/\";s:6:\"widget\";s:21:\"\\Custom\\Widget\\Action\";s:6:\"params\";a:1:{i:0;s:6:\"action\";}}}'),
 ('theme', 'default');
 
 --
