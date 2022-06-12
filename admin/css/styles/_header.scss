@@ -1,6 +1,6 @@
 .custom-admin-header-wrap {
     display: flex;
-    background-image: url(../img/header-bg.gif);
+    background-color: $gray-800;
     gap: 1rem;
     align-items: center;
     padding: 0 5%;
@@ -10,11 +10,11 @@
 
         a {
             display: block;
-            color: #333;
+            color: $gray-100;
             font-size: 16px;
 
             &:hover {
-                color: #000;
+                color: $gray-300;
             }
         }
     }
@@ -28,13 +28,13 @@
             .item-link {
                 display: block;
                 padding: 0.8rem 1rem;
-                color: #666;
+                color: $gray-100;
             }
 
             &:hover {
                 .item-link {
-                    color: #333;
-                    background-color: #ebebeb;
+                    color: $gray-300;
+                    background-color: $gray-700;
                     font-weight: bold;
                 }
 
@@ -45,7 +45,7 @@
 
             &.active {
                 .item-link {
-                    color: #333;
+                    color: $gray-300;
                     font-weight: bold;
                 }
             }
@@ -53,7 +53,7 @@
             .item-submenu {
                 display: none;
                 position: absolute;
-                background-color: #ebebeb;
+                background-color: $gray-300;
                 min-width: 150px;
 
                 .subitem {
@@ -61,7 +61,7 @@
                         display: block;
                         padding: 10px 16px;
                         position: relative;
-                        color: #666;
+                        color: $gray-700;
 
                         &::before {
                             content: "";
@@ -69,7 +69,7 @@
                             width: 0;
                             height: calc(100% - 8px);
                             position: absolute;
-                            background-color: #154d82;
+                            background-color: $blue-700;
                             top: 4px;
                             left: 4px;
                             transition: width .1s ease-in-out;
@@ -78,7 +78,7 @@
 
                     &:hover {
                         .subitem-link {
-                            color: #154d82;
+                            color: $blue-700;
 
                             &::before {
                                 width: 4px;
@@ -88,7 +88,7 @@
 
                     &.active {
                         .subitem-link {
-                            color: #154d82;
+                            color: $blue-700;
                             font-weight: bold;
                         }
                     }
@@ -99,6 +99,7 @@
 
     .header-item-user {
         .username {
+            color: $gray-100;
             font-weight: bold;
         }
     }

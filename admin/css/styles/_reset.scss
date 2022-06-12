@@ -200,11 +200,11 @@ ul {
 }
 
 a {
-    color: #2271b1;
+    color: $blue-500;
     text-decoration: none;
 
     &:hover {
-        color: #135e96;
+        color: $blue-600;
     }
 }
 

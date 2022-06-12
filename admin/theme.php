@@ -38,8 +38,8 @@ require __DIR__ . '/header.php'; ?>
                                     <p class="theme-description"><?= $theme['description'] ?></p>
                                     <div class="action">
                                         <?php if (!$theme['is_activated']) : ?>
-                                            <a href="<?= $option->siteUrl('action/theme-handler?activate=' . $theme['dir']) ?>">启用</a>
-                                            <a href="<?= $option->adminSiteUrl('theme-config.php?config=' . $theme['dir']) ?>">编辑</a>
+                                            <a href="<?= $option->siteUrl('index.php/action/theme-handler?activate=' . $theme['dir']) ?>">启用</a>
+                                            <a href="<?= $option->adminSiteUrl('index.php/theme-config.php?config=' . $theme['dir']) ?>">编辑</a>
                                         <?php endif; ?>
                                     </div>
                                 <?php else : ?>

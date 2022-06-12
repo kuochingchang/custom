@@ -60,7 +60,6 @@ class Option extends Base
      */
     public function siteUrl($uri = '')
     {
-        $this->request->getUrlPrefix();
         return $this->request->getUrlPrefix() . rtrim('/' . trim($uri, '/'), '/');
     }
 

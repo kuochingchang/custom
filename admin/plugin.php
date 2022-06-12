@@ -38,9 +38,9 @@ require __DIR__ . '/header.php';
                             <td class="action">
                                 <?php if ($plugin['is_complete'] && $plugin['is_activated']) : ?>
                                     <a href="<?= $option->adminSiteUrl('plugin-config.php?config=' . $plugin['dir']) ?>">设置</a>
-                                    <a href="<?= $option->siteUrl('action/plugin-handler?deactivate=' . $plugin['dir']) ?>">禁用</a>
+                                    <a href="<?= $option->siteUrl('index.php/action/plugin-handler?deactivate=' . $plugin['dir']) ?>">禁用</a>
                                 <?php elseif ($plugin['is_complete']) : ?>
-                                    <a href="<?= $option->siteUrl('action/plugin-handler?activate=' . $plugin['dir']) ?>">启用</a>
+                                    <a href="<?= $option->siteUrl('index.php/action/plugin-handler?activate=' . $plugin['dir']) ?>">启用</a>
                                 <?php else : ?>
                                     <span>损坏</span>
                                 <?php endif; ?>
